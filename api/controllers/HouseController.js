@@ -7,12 +7,12 @@
 
 module.exports = {
     addPoints: async (req,res) => {
-        if(req.body.key != sails.config.secret)
+        if(req.query.key != sails.config.secret)
             return res.sendStatus(401);
-        if(!req.body.house || !req.body.points)
+        if(!req.query.house || !req.query.points)
             return res.sendStatus(422);
-        var house = await House.findOne({'name' : req.body.house});
-        await House.update({'name' : req.body.house}, {'points' : house.points + parseInt(req.body.points)})
+        var house = await House.findOne({'name' : req.query.house});
+        await House.update({'name' : req.query.house}, {'points' : house.points + parseInt(req.query.points)})
         res.status(200).send(await House.find())
     },
 

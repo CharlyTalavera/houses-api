@@ -10,10 +10,10 @@
  */
 
 module.exports.bootstrap = async function(done) {
-    await House.findOrCreate({name:'griffindor'},{name:'griffindor'});
+    await House.findOrCreate({name:'gryffindor'},{name:'gryffindor'});
     await House.findOrCreate({name:'slytherin'},{name:'slytherin'});
     await House.findOrCreate({name:'ravenclaw'},{name:'ravenclaw'});
-    await House.findOrCreate({name:'hufflepuf'},{name:'hufflepuf'});
+    await House.findOrCreate({name:'hufflepuff'},{name:'hufflepuff'});
     return done();
 
 };

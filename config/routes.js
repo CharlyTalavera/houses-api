@@ -10,7 +10,7 @@
 
 module.exports.routes = {
 
-    'POST /addPoints' : 'HouseController.addPoints',
-    'GET /house' : 'HouseController.showPoints'
+    'GET /addPoints' : 'HouseController.addPoints',
+    'GET /houses' : 'HouseController.showPoints'
 
 };
