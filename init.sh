@@ -1,5 +1,6 @@
 #!/bin/bash
 
+
 if [ ! -d "node_modules" ]; then
   echo "First run, npm install..."
   npm install
