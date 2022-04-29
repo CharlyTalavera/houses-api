@@ -9,7 +9,7 @@
     "sails-hook-orm": "^2.0.0-16",
     "sails-hook-sockets": "^1.4.0",
     "lodash": "3.10.1",
-    "async": "2.0.1"
+    "async": "2.6.4"
   },
   "devDependencies": {
     "eslint": "4.11.0"
